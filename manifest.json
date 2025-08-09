@@ -1,0 +1,19 @@
+{
+  "lang": "de-DE",
+  "name": "Lumina for Roblox",
+  "short_name": "Lumina",
+  "description": "Your Roblox AI Assistance",
+  "start_url": "/Lumina/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
+  {
+    "src": "/Lumina/icon512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
+
+}

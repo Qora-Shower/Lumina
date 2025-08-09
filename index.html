@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="manifest" href="manifest.json">
+  
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Lumina</title>
+</head>
+
+<body>
+  
+  
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/Landkreisgoerlitz/sw.js')
+      .then(() => console.log("Service Worker registered"))
+      .catch(err => console.error("SW registration failed:", err));
+  }
+</script>
+<script src="sw.js"></script>
+</body>
+
+</html>
