@@ -1,4 +1,4 @@
-const CACHE_NAME = "Lumina-V2";
+const CACHE_NAME = "Lumina-V3";
 const BASE = "/Lumina/";
 
 self.addEventListener('install', (event) => {
