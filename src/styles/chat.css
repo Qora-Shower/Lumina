@@ -67,16 +67,16 @@ body {
 }
 
 .arrow {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   color: #fff;
   stroke-width: 2px;
 }
 
 .ellipsis {
   fill: #fff;
-  width: 27px;
-  height: 27px;
+  width: 24px;
+  height: 24px;
   color: #fff;
   stroke-width: 2px;
 }
@@ -103,7 +103,7 @@ body {
 .msg-trenn-line-line {
   width: 90vw;
   height: 1px;
-  background: #2A2A2A;
+  background: #101010;
 }
 
 .msg-cont-user {
@@ -122,9 +122,9 @@ body {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: #0B9BFF;
+  background: #373737;
   outline-offset: 2px;
-  outline: 1px solid #8C8C8C;
+  outline: 1px solid #1DA8FF;
   border-radius: 25px;
   margin-bottom: 2px;
   bottom: 0;
@@ -132,9 +132,9 @@ body {
 
 .msg-cont-user-layout {
   position: absolute;
-  width: 60vw;
+  width: 70vw;
   height: 200px;
-  border-radius: 30px 30px 15px 30px;
+  border-radius: 30px 30px 0px 30px;
   background: #101010;
   margin-right: 40px;
   bottom: 0;
@@ -152,21 +152,20 @@ body {
 }
 
 .msg-ai {
-  width: 90vw;
-  height: 200px;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 10px;
 }
-
 
 .msg-ai-layout {
   font-size: 18px;
   font-weight: 700;
-  width: 80vw;
-  height: 200px;
+  width: 90vw;
   color: #fff;
-  overflow: hidden;
+  background: transparent;
+  word-wrap: break-word;
+  white-space: normal;
 }
