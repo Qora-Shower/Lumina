@@ -1,0 +1,172 @@
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.cont {
+  width: 85vw;
+  height: 47px;
+  outline: 1.5px solid #717171;
+  border-radius: 30px;
+  background: transparent;
+  bottom: 0;
+  position: fixed;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input {
+  font-size: 15px;
+  font-weight: 700;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  width: 80vw;
+  height: 40px;
+}
+
+.input::placeholder {
+  color: #717171;
+}
+
+.cont:hover {
+  outline: 1.5px solid #fff;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  color: #717171;
+  stroke-width: 1.5px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.top {
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: .5px solid#282828;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  stroke-width: 2px;
+}
+
+.ellipsis {
+  fill: #fff;
+  width: 27px;
+  height: 27px;
+  color: #fff;
+  stroke-width: 2px;
+}
+
+.container {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 540px;
+  background: transparent;
+  margin-top: 70px;
+  overflow-y: auto;
+}
+
+.msg-trenn-line {
+  width: 100vw;
+  height: 5px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg-trenn-line-line {
+  width: 90vw;
+  height: 1px;
+  background: #2A2A2A;
+}
+
+.msg-cont-user {
+  position: relative;
+  margin-top: 10px;
+  width: 95vw;
+  height: 200px;
+  display: flex;
+  justify-content: right;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 10px;
+}
+
+.msg-cont-user-profile {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #0B9BFF;
+  outline-offset: 2px;
+  outline: 1px solid #8C8C8C;
+  border-radius: 25px;
+  margin-bottom: 2px;
+  bottom: 0;
+}
+
+.msg-cont-user-layout {
+  position: absolute;
+  width: 60vw;
+  height: 200px;
+  border-radius: 30px 30px 15px 30px;
+  background: #101010;
+  margin-right: 40px;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  overflow: hidden;
+}
+
+.layout-in-user-msg {
+  width: 50vw;
+  height: 175px;
+  overflow: hidden;
+  justify-content: left;
+}
+
+.msg-ai {
+  width: 90vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+
+
+.msg-ai-layout {
+  font-size: 18px;
+  font-weight: 700;
+  width: 80vw;
+  height: 200px;
+  color: #fff;
+  overflow: hidden;
+}
