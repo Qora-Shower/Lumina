@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="../styles/chat.css">
   <title>Lumina</title>
@@ -20,25 +22,48 @@
       
       <div class="msg-cont-user">
         <div class="msg-cont-user-layout">
-          <div>e,,</div>
+          <div>Forum und die ist nicht mehr da und</div>
         </div>
-        <div class="msg-cont-user-profile"></div>
       </div>
       
       <div class="msg-trenn-line"><div class="msg-trenn-line-line"></div></div>
       
       <div class="msg-ai">
-        <div class="msg-ai-layout">Hi am your Roblox assistance Lumina</div>
+        <div class="msg-ai-layout">Hi i am your Roblox assistance Lumina, i can help you with coding, debugging and more.</div>
+          
+          <div class="cmd"><div class="code">
+            <div class="header">StarterCharacterScript
+            <div class="i-holder"><i class="i" id="CopyBtn" data-lucide="copy"></i></div>
+            </div>
+            
+              <div class="content" id="content">nisteinimageundeinimagefürdenrobloxstudioserverisalwaysundhataucheinenbuttonsmitdemmandasmacnalsoa</div>
+              </div>
+            </div>
       </div>
+      
+      <div class="msg-trenn-line">
+        <div class="msg-trenn-line-line"></div>
+      </div>
+      
     </div>
     
   <div class="cont">
-  <input class="input" placeholder="Send message...">
+  <input class="input" id="input" placeholder="Send message...">
   <i class="btn" data-lucide="circle-plus"></i></div>
   
   <script>
     lucide.createIcons()
+    
+    document.getElementById("CopyBtn").addEventListener("click", function () {
+  const text = document.getElementById("content").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    console.log("Inhalt kopiert:", text);
+  }).catch(err => {
+    console.error("Fehler beim Kopieren:", err);
+  });
+});
   </script>
+  <script src="../../../../../js/haptic.js"></script>
 </body>
 
 </html>

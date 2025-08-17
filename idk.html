@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roblox Lua KI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="icon-btn" aria-label="Zurück">
+      <svg viewBox="0 0 24 24" class="icon"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+    <h1 class="title">Roblox Lua KI</h1>
+    <div class="icon-btn" aria-label="Menü">
+      <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+    </div>
+  </header>
+
+  <!-- Chat -->
+  <main class="chat">
+    <!-- User -->
+    <div class="msg user">
+      <div class="bubble">Bitte ein Prefix-System im Chat</div>
+    </div>
+
+    <!-- KI Antwort -->
+    <div class="msg ai">
+      <div class="ai-frame">
+        <!-- Tabs -->
+        <div class="tabs">
+          <div class="tab active">Code</div>
+          <div class="tab">Struktur</div>
+          <div class="tab">Requirements</div>
+          <div class="tab">Resources</div>
+        </div>
+
+        <!-- Codeblock -->
+        <div class="code-block">
+          <div class="code-header">
+            <span>ChatPrefix.lua</span>
+            <div class="copy-btn">📋</div>
+          </div>
+          <pre><code>local Players = game:GetService("Players")
+
+Players.PlayerAdded:Connect(function(player)
+    player.Chatted:Connect(function(msg)
+        print("[Prefix] "..player.Name..": "..msg)
+    end)
+end)</code></pre>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+   <footer class="input-bar">
+  <div class="input-container">
+    <textarea id="userInput" placeholder="Nachricht an die KI..." rows="1"></textarea>
+  </div>
+  <div class="icon-container">
+    <div class="icon-upload" role="button">📎</div>
+    <div id="sendBtn" class="icon-send" role="button">➤</div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

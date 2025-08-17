@@ -7,6 +7,7 @@ body {
   background: #000;
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .cont {
@@ -94,10 +95,10 @@ body {
 .msg-trenn-line {
   width: 100vw;
   height: 5px;
-  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .msg-trenn-line-line {
@@ -106,66 +107,112 @@ body {
   background: #101010;
 }
 
-.msg-cont-user {
-  position: relative;
-  margin-top: 10px;
-  width: 95vw;
-  height: 200px;
-  display: flex;
-  justify-content: right;
-  padding-left: 5px;
-  padding-right: 5px;
-  gap: 10px;
+.layout-in-user-msg {
+  width: 50vw;
+  overflow: hidden;
+  justify-content: left;
 }
 
-.msg-cont-user-profile {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: #373737;
-  outline-offset: 2px;
-  outline: 1px solid #1DA8FF;
-  border-radius: 25px;
-  margin-bottom: 2px;
-  bottom: 0;
+/* User-Nachrichten rechtsbündig */
+.msg-cont-user {
+  width: 94vw;
+  display: flex;
+  justify-content: flex-end; /* rechtsbündig */
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
 }
 
 .msg-cont-user-layout {
-  position: absolute;
-  width: 70vw;
-  height: 200px;
-  border-radius: 30px 30px 0px 30px;
-  background: #101010;
-  margin-right: 40px;
-  bottom: 0;
+  width: 60vw; /* feste Breite */
+  padding: 10px 15px; /* oben, rechts, unten, links */
+  border-radius: 30px 30px 30px 30px;
+  background: #202020; /* leicht schwarzer Hintergrund */
   color: #fff;
-  display: flex;
-  justify-content: left;
-  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left; /* Text linksbündig */
+  font-weight: 900;
 }
 
-.layout-in-user-msg {
-  width: 50vw;
-  height: 175px;
-  overflow: hidden;
-  justify-content: left;
-}
-
+/* KI-Nachrichten linksbündig */
 .msg-ai {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+  width: 94vw;
   margin-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .msg-ai-layout {
-  font-size: 18px;
-  font-weight: 700;
-  width: 90vw;
+  width: 90vw; /* volle Breite */
+  padding: 10px 15px;
+  border-radius: 30px 30px 30px 0;
+  background: transparent; /* kein Hintergrund */
   color: #fff;
-  background: transparent;
+  font-weight: 700;
+  font-size: 18px;
   word-wrap: break-word;
   white-space: normal;
+  text-align: left;
+  display: flex;
+  align-items: center ;
+}
+
+.cmd {
+  width: 97vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.code {
+  width: 90vw;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #202020;
+}
+
+.header {
+  width: 90vw;
+  height: 30px;
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+
+.i-holder {
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2px;
+}
+
+.i-holder:hover {
+  background: #282828;
+}
+
+.content {
+  font-family: monospace;
+  width: 81vw;
+  white-space: normal;
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  overflow-x: auto;
 }
